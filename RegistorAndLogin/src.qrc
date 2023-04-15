@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>covid.jpg</file>
+        <file>health.jpg</file>
+        <file>vaccine.jpg</file>
+        <file>jab.jpg</file>
+    </qresource>
+</RCC>
