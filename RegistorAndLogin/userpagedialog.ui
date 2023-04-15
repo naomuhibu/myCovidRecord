@@ -104,7 +104,7 @@
           </spacer>
          </item>
          <item>
-          <widget class="QPushButton" name="pushButton">
+          <widget class="QPushButton" name="genelateButton">
            <property name="text">
             <string>Genelate QR cord</string>
            </property>

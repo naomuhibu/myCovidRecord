@@ -35,7 +35,7 @@ private slots:
 
     void on_symptomCommandLinkButton_clicked();
 
-    void on_pushButton_released();
+    void on_genelateButton_released();
 
 private:
     Ui::userPageDialog *ui;

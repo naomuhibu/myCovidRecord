@@ -1,6 +1,6 @@
 #include "userpagedialog.h"
 #include "ui_userpagedialog.h"
-//#include "qrcorddialog.h"
+#include "qrcodedialog.h"
 
 userPageDialog::userPageDialog(QString userId, QWidget *parent) :
     QDialog(parent),
@@ -154,10 +154,9 @@ void userPageDialog::on_symptomCommandLinkButton_clicked()
     QDesktopServices::openUrl(QUrl(link));
 }
 
-/*
-void userPageDialog::on_pushButton_released()
+void userPageDialog::on_genelateButton_released()
 {
-    qrcordDialog *qrcodedialog = new qrcordDialog(this);
+    qrCodeDialog *qrcodedialog = new qrCodeDialog(this);
     qrcodedialog->show();
 }
-*/
+
