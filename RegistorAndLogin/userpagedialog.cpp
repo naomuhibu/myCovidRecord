@@ -1,6 +1,6 @@
 #include "userpagedialog.h"
 #include "ui_userpagedialog.h"
-//#include "qrcorddialog.h"
+#include "qrcodedialog.h"
 
 userPageDialog::userPageDialog(QString userId, QWidget *parent) :
     QDialog(parent),
@@ -154,10 +154,42 @@ void userPageDialog::on_symptomCommandLinkButton_clicked()
     QDesktopServices::openUrl(QUrl(link));
 }
 
-/*
-void userPageDialog::on_pushButton_released()
+void userPageDialog::on_genelateButton_released()
 {
-    qrcordDialog *qrcodedialog = new qrcordDialog(this);
-    qrcodedialog->show();
+    // create a QSqlDatabase object
+    QSqlDatabase userDB = QSqlDatabase::addDatabase("QSQLITE");
+
+    // set the database file name
+    userDB.setDatabaseName("/Users/Shared/RegistorAndLogin/userdata.sqlite3");
+
+    // can not open the database
+    if (!userDB.open()) {
+        QMessageBox::critical(this, "Error", "Unable to open database!" + userDB.lastError().text());
+        return; // return early to avoid further errors
+    }
+
+    // prepare the query
+    QSqlQuery qry(userDB);
+    qry.prepare("SELECT * FROM UserData WHERE userId = :userId");
+    qry.bindValue(":userId", m_userId);
+
+    // execute the query
+    if (!qry.exec()) {
+        QMessageBox::critical(this, "Error", "Failed to execute query!" + qry.lastError().text());
+        return; // return early to avoid further errors
+    }
+
+    // retrieve the user data from the query result
+    QString vaccine; // define the vaccine variable outside of the if block
+    if (qry.next()) {
+        vaccine = qry.value(9).toString(); // assign the value to the variable
+    }
+
+    // check if user vaccine data is completed
+    if (vaccine == "Completed") {
+        qrCodeDialog *qrcodedialog = new qrCodeDialog(m_userId, this);
+        qrcodedialog->show();
+    } else {
+        QMessageBox::information(this, "Info", "You are not allowed to get a vaccine certificate yet.");
+    }
 }
-*/

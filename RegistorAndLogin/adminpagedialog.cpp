@@ -1,13 +1,13 @@
 #include "adminpagedialog.h"
 #include "ui_adminpagedialog.h"
 #include "selecteduserdatadialog.h"
+#include "userpagedialog.h"
 
 adminPageDialog::adminPageDialog(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::adminPageDialog)
 {
     ui->setupUi(this);
-
     timer = new QTimer(this);
     connect(timer, SIGNAL(timeout()),this,SLOT(dateTimeFunction()));
     timer->start(1000);
