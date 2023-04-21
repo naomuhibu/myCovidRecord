@@ -7,10 +7,6 @@ vaccineRecordDialog::vaccineRecordDialog(QString userId, QWidget *parent) :
     m_userId(userId)
 {
     ui->setupUi(this);
-    //timer = new QTimer(this);
-   // connect(timer, SIGNAL(timeout()),this,SLOT(dateFunction()));
-   // timer->start(1000);
-
     connectDatabase();
     viewUserData(userId);
 }
@@ -26,7 +22,7 @@ void vaccineRecordDialog::connectDatabase()
     database = QSqlDatabase::addDatabase("QSQLITE");
 
     // set the database file name
-    database.setDatabaseName("/Users/Shared/RegistorAndLogin/userdata.sqlite3");
+    database.setDatabaseName("userdata.sqlite3");
 
     // can not open the database
     if (!database.open()) {
@@ -89,7 +85,7 @@ void vaccineRecordDialog::on_pushButton_released()
     QSqlDatabase vaccineDatabase = QSqlDatabase::addDatabase("QSQLITE", "vaccineConnection");
 
     // set the database file name
-    vaccineDatabase.setDatabaseName("/Users/Shared/RegistorAndLogin/covidTestAndVaccineData.db");
+    vaccineDatabase.setDatabaseName("covidTestAndVaccineData.db");
 
     // open the database
     if (vaccineDatabase.open()) {

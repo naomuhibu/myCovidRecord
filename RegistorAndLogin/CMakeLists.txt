@@ -42,6 +42,11 @@ set(PROJECT_SOURCES
     issues.cpp
     issues.h
     issues.ui
+    qrcodedialog.cpp
+    qrcodedialog.h
+    qrcodedialog.ui
+    qrcodegen.cpp
+    qrcodegen.hpp
     src.qrc
 )
 

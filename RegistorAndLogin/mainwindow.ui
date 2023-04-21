@@ -102,7 +102,7 @@
            </font>
           </property>
           <property name="text">
-           <string>My Corvid Record</string>
+           <string>My Covid Record</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignCenter</set>
@@ -255,7 +255,7 @@
                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                </property>
                <property name="text">
-                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://www.health.govt.nz/&quot;&gt;&lt;img src=&quot;:/images/health.jpg&quot;/&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                <string/>
                </property>
                <property name="textFormat">
                 <enum>Qt::AutoText</enum>

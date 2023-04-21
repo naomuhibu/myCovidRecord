@@ -1,13 +1,13 @@
 #include "adminpagedialog.h"
 #include "ui_adminpagedialog.h"
 #include "selecteduserdatadialog.h"
+#include "userpagedialog.h"
 
 adminPageDialog::adminPageDialog(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::adminPageDialog)
 {
     ui->setupUi(this);
-
     timer = new QTimer(this);
     connect(timer, SIGNAL(timeout()),this,SLOT(dateTimeFunction()));
     timer->start(1000);
@@ -16,7 +16,7 @@ adminPageDialog::adminPageDialog(QWidget *parent) :
     QSqlDatabase database = QSqlDatabase::addDatabase("QSQLITE");
 
     // set the database file name
-    database.setDatabaseName("/Users/Shared/RegistorAndLogin/covidTestAndVaccineData.db");
+    database.setDatabaseName("covidTestAndVaccineData.db");
 
     // open the database
     if (database.open()) {
@@ -51,7 +51,7 @@ void adminPageDialog::connectDatabase()
     database = QSqlDatabase::addDatabase("QSQLITE");
 
     // set the database file name
-    database.setDatabaseName("/Users/Shared/RegistorAndLogin/userdata.sqlite3");
+    database.setDatabaseName("userdata.sqlite3");
 
     // can not open the database
     if (!database.open()) {

@@ -29,7 +29,7 @@ void MainWindow::connectDatabase()
     database = QSqlDatabase::addDatabase("QSQLITE");
 
     // set the database file name
-    database.setDatabaseName("/Users/Shared/RegistorAndLogin/userdata.sqlite3");
+    database.setDatabaseName("userdata.sqlite3");
 
     // can not open the database
     if (!database.open()) {

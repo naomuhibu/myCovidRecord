@@ -23,7 +23,7 @@
       <property name="geometry">
        <rect>
         <x>0</x>
-        <y>0</y>
+        <y>-797</y>
         <width>1236</width>
         <height>1593</height>
        </rect>
@@ -104,7 +104,7 @@
           </spacer>
          </item>
          <item>
-          <widget class="QPushButton" name="pushButton">
+          <widget class="QPushButton" name="genelateButton">
            <property name="text">
             <string>Genelate QR cord</string>
            </property>
@@ -472,7 +472,27 @@
              </layout>
             </item>
             <item>
-             <widget class="QPlainTextEdit" name="plainTextEdit_5"/>
+             <widget class="QPlainTextEdit" name="plainTextEdit_5">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
+              <property name="plainText">
+               <string>Everyone in New Zealand aged 5 or over can get a free COVID-19 vaccination. It does not matter what your visa or citizenship status is.
+
+Children aged 6 months to 4 years can get the paediatric Pfizer vaccine if they are at higher risk of severe illness from COVID-19.
+
+Pfizer is the preferred COVID-19 vaccine for use in New Zealand.
+
+If you are 18 years of age or older and either cannot get the Pfizer vaccine or want a different option, you can get the Novavax vaccine.
+
+You will be given the option to choose your vaccine type when you book. The Novavax vaccine is not available at all vaccination sites.
+
+Whichever vaccine you get, you will need 2 doses. COVID-19 vaccines are free.
+
+COVID-19 vaccines used in New Zealand.
+For more information please click on above link</string>
+              </property>
+             </widget>
             </item>
            </layout>
           </item>
@@ -496,7 +516,30 @@
              </layout>
             </item>
             <item>
-             <widget class="QPlainTextEdit" name="plainTextEdit_3"/>
+             <widget class="QPlainTextEdit" name="plainTextEdit_3">
+              <property name="plainText">
+               <string>An additional Pfizer BA.4/5 COVID-19 bivalent booster is now available for people who have completed a primary vaccination course (for most people this is 2 doses).
+
+You can get this booster, regardless of how many boosters you have had, if you are:
+
+aged 30 and over or
+at higher risk of severe illness from COVID-19.
+It will need to be at least 6 months since your last COVID-19 vaccine or a positive COVID-19 test.
+
+Having COVID-19 does not provide the same level of immunity as getting vaccinated. We also know that your protection from the primary course (this is usually 2 doses) of the vaccine decreases over time.
+
+To keep your immunity levels high, stay up to date with your vaccinations — including boosters. This will lower your chances of getting very sick from COVID-19 and ending up in hospital.
+
+For boosters, we use the Pfizer BA.4/5 bivalent vaccine. This is an updated vaccine targeting Omicron. COVID-19 vaccines are free.
+
+The bivalent vaccine produces an immune response against the original virus and Omicron variants. Specifically the BA.4 and BA.5 subvariants.
+
+Current evidence indicates the bivalent vaccine is more effective against Omicron subvariants than earlier vaccines.
+
+If you do not want the bivalent vaccine, you can ask for the original Pfizer vaccine when you arrive for your vaccination.
+For more information about Boosters, please click above link.</string>
+              </property>
+             </widget>
             </item>
            </layout>
           </item>
@@ -520,7 +563,34 @@
              </layout>
             </item>
             <item>
-             <widget class="QPlainTextEdit" name="plainTextEdit_2"/>
+             <widget class="QPlainTextEdit" name="plainTextEdit_2">
+              <property name="plainText">
+               <string>3 Feb 2023
+From 1 March the Pfizer bivalent vaccine will replace the existing booster. From 1 April, an additional booster will be available for those eligible.
+All New Zealanders aged 30 and over will be able to access the new COVID-19 bivalent booster from April as part of the Government’s plan to keep Kiwis safe and take pressure off our health system.
+
+The new bivalent vaccine will replace the existing Pfizer booster and is considered likely to be more effective against Omicron subvariants. Bivalent vaccines work by combining 2 strains of a virus, which prompts the body to create antibodies against both strains, providing a greater level of protection.
+
+From 1 April, anyone 30 years or over will be eligible to receive the bivalent vaccine, as long as it has been at least 6 months since their last COVID-19 booster or positive COVID-19 test.
+
+People at higher risk of severe illness from COVID-19 will also be able to receive an additional booster, regardless of how many doses they have previously had.
+
+As well as broadening the criteria from April, from 1 March anyone currently eligible for a COVID-19 booster will be able to get the new bivalent vaccine.
+
+We know vaccination is the best protection against the virus, and these actions will provide added protection to a larger number of adult New Zealanders. The latest report from the Ministry of Health indicated 8,220 cases over the previous week so the virus is definitely still circulating out there.
+
+We are also planning for older New Zealanders and those most at risk of getting sick to get a flu jab at the same time as their COVID-19 booster. This will be part of a ‘one and done’ approach to help people stay well this winter.
+
+Because it may be a while since your previous boosters, now is a good time to check your records on My Covid Record.
+
+Log in to My Covid Record(external link)
+
+Vaccination against COVID-19 remains free.  
+
+Getting boosted is important for your health and keeping you out of hospital this winter.
+For more updates, please click above link.</string>
+              </property>
+             </widget>
             </item>
            </layout>
           </item>
@@ -544,7 +614,47 @@
              </layout>
             </item>
             <item>
-             <widget class="QPlainTextEdit" name="plainTextEdit_6"/>
+             <widget class="QPlainTextEdit" name="plainTextEdit_6">
+              <property name="plainText">
+               <string>OVID-19 symptoms
+Symptoms can include one or more of the following:
+
+a new or worsening cough
+sneezing and runny nose
+a fever
+temporary loss of smell or altered sense of taste
+sore throat
+shortness of breath
+fatigue/feeling of tiredness.
+Less common symptoms may include:
+
+diarrhoea
+headache
+muscle pain or body aches
+nausea
+vomiting
+malaise — a general feeling of discomfort, illness or unease
+chest pain
+abdominal pain
+joint pain
+confusion or irritability.
+These less common symptoms almost always occur with one or more of the common symptoms.
+
+These symptoms do not necessarily mean you have COVID-19. The symptoms are like other illnesses that are much more common, such as colds and flu.
+
+Shortness of breath is a sign of possible pneumonia and requires immediate medical attention.
+
+If you have any of these symptoms, contact your doctor, Healthline on 0800 358 5453 or your iwi health provider.
+
+Time for symptoms to appear
+If you get symptoms with Omicron, you are likely to get them within 3 days of infection. But it could take up to 8 days after infection.
+
+Sometimes people may have COVID-19, but not have any symptoms.
+
+Some people with COVID-19 can pass it on to others 1 or 2 days before showing symptoms.
+For more information about Symptoms, please click above link.</string>
+              </property>
+             </widget>
             </item>
            </layout>
           </item>

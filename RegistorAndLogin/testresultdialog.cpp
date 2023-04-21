@@ -7,10 +7,6 @@ testResultDialog::testResultDialog(QString userId, QWidget *parent) :
     m_userId(userId)
 {
     ui->setupUi(this);
-    //timer = new QTimer(this);
-   // connect(timer, SIGNAL(timeout()),this,SLOT(dateFunction()));
-   // timer->start(1000);
-
     connectDatabase();
     viewUserData(userId);
 }
@@ -26,7 +22,7 @@ void testResultDialog::connectDatabase()
     database = QSqlDatabase::addDatabase("QSQLITE");
 
     // set the database file name
-    database.setDatabaseName("/Users/Shared/RegistorAndLogin/userdata.sqlite3");
+    database.setDatabaseName("userdata.sqlite3");
 
     // can not open the database
     if (!database.open()) {
@@ -95,7 +91,7 @@ void testResultDialog::on_pushButton_released()
     database = QSqlDatabase::addDatabase("QSQLITE");
 
     // set the database file name
-    database.setDatabaseName("/Users/Shared/RegistorAndLogin/covidTestAndVaccineData.db");
+    database.setDatabaseName("covidTestAndVaccineData.db");
 
     // open the database
     if (database.open()) {

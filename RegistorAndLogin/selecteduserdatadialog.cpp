@@ -33,7 +33,7 @@ QString selectedUserDataDialog::viewUserData(QString userId, QString userName, Q
     // create QSqlDatabase objects
     database = QSqlDatabase::addDatabase("QSQLITE");
     // set the database file names
-    database.setDatabaseName("/Users/Shared/RegistorAndLogin/userdata.sqlite3");
+    database.setDatabaseName("userdata.sqlite3");
     // can not open the databases
     if (!database.open()) {
         QMessageBox::critical(this, "Error", "Unable to open userdata database: " + database.lastError().text());
@@ -113,7 +113,7 @@ void selectedUserDataDialog::on_pushButton_released()
     // create QSqlDatabase objects
     database = QSqlDatabase::addDatabase("QSQLITE");
     // set the database file names
-    database.setDatabaseName("/Users/Shared/RegistorAndLogin/userdata.sqlite3");
+    database.setDatabaseName("userdata.sqlite3");
     // can not open the databases
     if (!database.open()) {
         QMessageBox::critical(this, "Error", "Unable to open userdata database: " + database.lastError().text());
@@ -169,7 +169,7 @@ void selectedUserDataDialog::viewTestVaccineData(QString userId) {
     // create QSqlDatabase objects
     testVaccineDatabase = QSqlDatabase::addDatabase("QSQLITE");
     // set the database file names
-    testVaccineDatabase.setDatabaseName("/Users/Shared/RegistorAndLogin/covidTestAndVaccineData.db");
+    testVaccineDatabase.setDatabaseName("covidTestAndVaccineData.db");
     // can not open the databases
     if (!testVaccineDatabase.open()) {
         QMessageBox::critical(this, "Error", "Unable to open covid test and vaccine database: " + testVaccineDatabase.lastError().text());
@@ -211,7 +211,7 @@ void selectedUserDataDialog::on_testResultPushButton_released()
     // create QSqlDatabase objects
     database = QSqlDatabase::addDatabase("QSQLITE");
     // set the database file names
-    database.setDatabaseName("/Users/Shared/RegistorAndLogin/userdata.sqlite3");
+    database.setDatabaseName("userdata.sqlite3");
     // can not open the databases
     if (!database.open()) {
         QMessageBox::critical(this, "Error", "Unable to open userdata database: " + database.lastError().text());
@@ -246,7 +246,7 @@ void selectedUserDataDialog::on_VaccineRecordPushButton_released()
     // create QSqlDatabase objects
     database = QSqlDatabase::addDatabase("QSQLITE");
     // set the database file names
-    database.setDatabaseName("/Users/Shared/RegistorAndLogin/userdata.sqlite3");
+    database.setDatabaseName("userdata.sqlite3");
     // can not open the databases
     if (!database.open()) {
         QMessageBox::critical(this, "Error", "Unable to open userdata database: " + database.lastError().text());
